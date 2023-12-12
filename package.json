@@ -5,17 +5,20 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "knex": "node –-no-warnings --import tsx ./node_modules/knex/bin/cli.js --knexfile ./knexfile",
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js --knexfile ./knexfile",
     "lint": "eslint ./ --ext .ts --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cookie": "^9.2.0",
+    "dotenv": "^16.3.1",
     "fastify": "^4.24.3",
     "knex": "^3.1.0",
     "sqlite3": "^5.1.6",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
